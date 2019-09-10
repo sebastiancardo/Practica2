@@ -53,6 +53,15 @@ Complejo Complejo::operator *(Complejo c1)
 
 }
 
+ostream &operator <<(ostream &out, const Complejo &c1)
+{
+    out << c1.real_part;
+    out << "+i" << c1.img_part << endl;
+    return out;
+
+}
+
+
 Complejo Complejo::operator /(Complejo c1)
 {
     Complejo c3(c1.getreal_part()*getreal_part(),c1.getreal_part()*getimg_part());
