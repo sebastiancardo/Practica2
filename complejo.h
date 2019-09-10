@@ -18,6 +18,7 @@ public:
     Complejo operator -(Complejo c1);
     Complejo operator *(Complejo c1);
     Complejo operator /(Complejo c1);
+    friend ostream & operator << (ostream &out, const Complejo &c);
     Complejo operator ~();
     ~Complejo();
 
